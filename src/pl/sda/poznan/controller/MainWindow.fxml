@@ -8,10 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <BorderPane fx:controller="pl.sda.poznan.controller.MainWindowController"
             xmlns:fx="http://javafx.com/fxml">
+
     <top>
         <MenuBar>
             <Menu text="Game">
-                <MenuItem text="New game" onAction="#connectToServer"/>
+                <MenuItem text="New game" onAction="#connectToServerAction"/>
                 <SeparatorMenuItem/>
                 <MenuItem text="Exit"/>
             </Menu>
@@ -19,32 +20,22 @@
     </top>
     <center>
         <GridPane gridLinesVisible="true">
-            <Label fx:id="0" GridPane.rowIndex="0" GridPane.columnIndex="0" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
-            <Label fx:id="1" GridPane.rowIndex="0" GridPane.columnIndex="1" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
-            <Label fx:id="2" GridPane.rowIndex="0" GridPane.columnIndex="2" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
+            <Label fx:id="0" GridPane.rowIndex="0" GridPane.columnIndex="0" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
+            <Label fx:id="1" GridPane.rowIndex="0" GridPane.columnIndex="1" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
+            <Label fx:id="2" GridPane.rowIndex="0" GridPane.columnIndex="2" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
 
-            <Label fx:id="3" GridPane.rowIndex="1" GridPane.columnIndex="0" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
-            <Label fx:id="4" GridPane.rowIndex="1" GridPane.columnIndex="1" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
-            <Label fx:id="5" GridPane.rowIndex="1" GridPane.columnIndex="2" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
+            <Label fx:id="3" GridPane.rowIndex="1" GridPane.columnIndex="0" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
+            <Label fx:id="4" GridPane.rowIndex="1" GridPane.columnIndex="1" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
+            <Label fx:id="5" GridPane.rowIndex="1" GridPane.columnIndex="2" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
 
-            <Label fx:id="6" GridPane.rowIndex="2" GridPane.columnIndex="0" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
-            <Label fx:id="7" GridPane.rowIndex="2" GridPane.columnIndex="1" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
-            <Label fx:id="8" GridPane.rowIndex="2" GridPane.columnIndex="2" minHeight="150" minWidth="150"
-                   onMouseClicked="#handleClick"/>
+            <Label fx:id="6" GridPane.rowIndex="2" GridPane.columnIndex="0" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
+            <Label fx:id="7" GridPane.rowIndex="2" GridPane.columnIndex="1" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
+            <Label fx:id="8" GridPane.rowIndex="2" GridPane.columnIndex="2" minHeight="150" minWidth="150" onMouseClicked="#handleClick"/>
         </GridPane>
     </center>
-
     <right>
-        <VBox style="-fx-background-color: crimson" minWidth="300">
-            <Label fx:id="LogTextArea"/>
+        <VBox style="-fx-background-color: azure" minWidth="300">
+            <Label fx:id="logTextArea"/>
         </VBox>
     </right>
 </BorderPane>
